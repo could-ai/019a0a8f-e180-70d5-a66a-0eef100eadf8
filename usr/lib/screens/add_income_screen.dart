@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import '../models/tuition_income.dart';
 
 class AddIncomeScreen extends StatefulWidget {
@@ -115,7 +116,7 @@ class _AddIncomeScreenState extends State<AddIncomeScreen> {
                     child: Text(
                       _selectedDate == null
                           ? 'No Date Chosen!'
-                          : 'Picked Date: ${DateFormat.yMd().format(_selectedDate!)}',
+                          : 'Picked Date: \\\\$\\\{DateFormat.yMd().format(_selectedDate!)}\\',
                     ),
                   ),
                   TextButton(
